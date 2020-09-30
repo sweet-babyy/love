@@ -2,12 +2,11 @@
 <html>
 <body>
 
-<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+<!—- текстовое поле -->
+<input id="inputText" type="text" value="A miss is as good as a mile">
 
-<input type="text" value="Hello World" id="myInput">
-<button onclick="myFunction()">Copy text</button>
-
-<p>The document.execCommand() method is not supported in IE9 and earlier.</p>
+<!-- кнопка -->
+<button id="copyText">Copy</button>
 
 <script>
 function myFunction() {
