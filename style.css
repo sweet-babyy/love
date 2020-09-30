@@ -1,3 +1,14 @@
-.coupon-alert {
-  display: none;
+/* стили текстового поля */
+#inputText {
+  padding: 6px 7px;
+  font-size: 15px;
+}
+
+/* стили кнопки */
+#copyText {
+  padding: 6px 11px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #121212;
+  color: #efefef;
 }
