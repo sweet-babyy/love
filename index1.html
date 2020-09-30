@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<div>
 <!—- текстовое поле -->
 <input id="inputText" type="text" value="A miss is as good as a mile">
 
@@ -12,7 +12,7 @@
 <input id="inputText" type="text" value="Тарас Тестович">
 
 <!-- кнопка -->
-<button id="copyText">Copy</button>
+<button id="copyText">Copy1</button>
 
 <script>
 /* сохраняем текстовое поле в переменную text */
@@ -26,6 +26,7 @@ btn.onclick = function() {
   text.select();    
   document.execCommand("A miss is as good as a mile");
 }
+
 /* сохраняем текстовое поле в переменную text */
 var text = document.getElementById("inputText");
 
@@ -38,8 +39,38 @@ btn.onclick = function() {
   document.execCommand("copy");
 }
 </script>
+</div>
+<div>
+<!—- текстовое поле -->
+<input id="inputText" type="text" value="Тарас Тестович">
 
+<!-- кнопка -->
+<button id="copyText">Copy1</button>
+<script>
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
 
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
 
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("Тарас Тестович");
+}
+
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("copy");
+}
+</script>
+</div>
 </body>
 </html>
