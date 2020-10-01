@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Sweet Baby</h1>
+<h1></h1>
 
 <p>Нажмите на кнопку, чтобы скопировать текст из текстового поля. Попробуйте вставить текст (например, ctrl+v) после этого в другом окне, увидите эффект.</p>
 
@@ -22,7 +22,15 @@ function myFunction() {
 
 <input type="text" value="Привет" id="myInput">
 <button onclick="myFunction()">Скопировать текст</button>
-
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Скопировал текст: " + copyText.value);
+}
+</script>
 <p></p>
 </body>
 </html>
