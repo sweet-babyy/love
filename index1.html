@@ -3,14 +3,14 @@
 <body>
 <h1></h1>
 
-<p>Нажмите на кнопку, чтобы скопировать текст из текстового поля. Попробуйте вставить текст (например, ctrl+v) после этого в другом окне, увидите эффект.</p>
+<p>Нажмите на кнопку, чтобы скопировать текст из текстового поля.</p>
 
-<input type="text" value="Привет мир" id="myInput">
-<button onclick="myFunction()">Скопировать текст</button>
+<input type="text" value="Привет мир" id="myInput1">
+<button onclick="myFunction1()">Скопировать текст</button>
 
 <script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
+function myFunction1() {
+  var copyText = document.getElementById("myInput1");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
@@ -20,11 +20,11 @@ function myFunction() {
 <p></p>
 <p>Вася Вася Вася</p>
 
-<input type="text" value="Привет" id="myInput">
-<button onclick="myFunction()">Скопировать текст</button>
+<input type="text" value="Привет" id="myInput2">
+<button onclick="myFunction2()">Скопировать текст</button>
 <script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
+function myFunction2() {
+  var copyText = document.getElementById("myInput2");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
