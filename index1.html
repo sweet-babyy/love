@@ -69,3 +69,73 @@ btn.onclick = function() {
 </div>
 </body>
 </html>
+<html>
+<body>
+<div>
+	<p>
+<!—- текстовое поле -->
+<input id="inputText" type="text" value="A miss is as good as a mile">
+
+<!-- кнопка -->
+<button id="copyText">Copy</button>
+
+<script>
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("A miss is as good as a mile");
+}
+
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("copy");
+}
+</script>
+</div>
+<div>
+<!—- текстовое поле -->
+<input id="inputText1" type="text" value="Тестович">
+
+<!-- кнопка -->
+<button id="copyText1">Copy</button>
+<script>
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText1");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText1");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("Тарас Тестович");
+}
+
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText1");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText1");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("Тарас Тестович");
+}
+</script>
+</div>
+</body>
+</html>
