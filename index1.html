@@ -6,18 +6,18 @@
 <p>Нажмите на кнопку, чтобы скопировать текст из текстового поля. Попробуйте вставить текст (например, ctrl+v) после этого в другом окне, увидите эффект.</p>
 
 <input type="text" value="Привет мир" id="myInput">
-<button onclick="myFunction(1)">Скопировать текст</button>
+<button click="myFunction()">Скопировать текст</button>
 
 <p></p>
 <p>Вася Вася Вася</p>
 
 <input type="text" value="Привет Вася" id="myInput">
-<button onclick="myFunction(2)">Скопировать текст</button>
+<button click="myFunction()">Скопировать текст</button>
 
 <p></p>
 
 <script>
-function myFunction(1) {
+function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
@@ -26,7 +26,7 @@ function myFunction(1) {
 }
 </script>
 <script>
-function myFunction(2) {
+function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
