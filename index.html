@@ -72,106 +72,44 @@ function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   document.execCommand("copy");
-  alert("Copied the text: Ціна однієї пари тапочок 158 грн. 
-
-Вам на скільки см потрібно? " + copyText.value);
-}
-</script>	
-  <p></p>
-
-<input type="text" value="Ціна однієї пари тапочок 158 грн.
-
-У нас є в наявності на 11, 12, 13, 14, 15, 16 і 17 см
-
-Вам на скільки см потрібно?" id="myInput">
-<button onclick="myFunction()">Скопірувати</button>
-
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: Ціна однієї пари тапочок 158 грн.
-
-У нас є в наявності на 11, 12, 13, 14, 15, 16 і 17 см
-
-Вам на скільки см потрібно?" + copyText.value);
-}
-</script>	
-  <p></p>
-
-<input type="text" value="Напишіть, будь ласка дані для відправки: 
-
-✅ Місто і номер відділення 
-
-✅ Прізвище та ім'я отримувача
-
-✅ Номер телефону
-
-✅ Як буде зручніше оплачувати, (при отриманні чи на карту)?" id="myInput">
-<button onclick="myFunction()">Скопірувати</button>
-
-<p></p>
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
   alert("Copied the text: " + copyText.value);
 }
 </script>	
   <p></p>
+<div>
+	<p>
+<!—- текстовое поле -->
+<input id="inputText" type="text" value="A miss is as good as a mile">
 
-<input type="text" value="До оплати Вам вийде 158 грн + доставка 40 грн і наложений платіж близько 20 грн. Підходить Вам?" id="myInput">
-<button onclick="myFunction()">Скопірувати</button>
-
-<p></p>
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>	
-  <p></p>
-
-<input type="text" value="Чудово) Відправочка буде сьогодні до 16:00. Після чого ми Вам повідомимо на вайбер.
-
-Дякую за замовлення 🌹" id="myInput">
-<button onclick="myFunction()">Скопірувати</button>
-
-<p></p>
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>	
-  <p></p>
-
-<input type="text" value="Оплата на карту у нас здійснюється на нашому сайті Кредитною картою (Visa, Mastercard) або ж через Privat24.
-
-
-
-Я Вам скину силочку на сайт, де Ви оберете потрібний розмір. колір і оплатите.
-
-Після оплати напишіть будь ласка нам сюди, що Ви оплатили замовлення." id="myInput">
-<button onclick="myFunction()">Скопірувати</button>
-
-<p></p>
-
+<!-- кнопка -->
+<button id="copyText">Copy</button>
 
 <script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("A miss is as good as a mile");
 }
-</script>	
+
+/* сохраняем текстовое поле в переменную text */
+var text = document.getElementById("inputText");
+
+/* сохраняем кнопку в переменную btn */
+var btn = document.getElementById("copyText");
+
+/* вызываем функцию при нажатии на кнопку */
+btn.onclick = function() {
+  text.select();    
+  document.execCommand("copy");
+}
+</script>
+</div>
 
   </body>
 </html>	
