@@ -77,6 +77,23 @@ function myFunction() {
 </script>	
   <p></p>
 <div>
+  <p></p>
+
+<input type="text" value="вам на скільки см потрібно?" id="myInput">
+<button onclick="myFunction()">Скопірувати</button>
+
+<p></p>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("вам на скільки см потрібно?");
+  alert("Copied the text: " + copyText.value);
+}
+</script>	
+  <p></p>
+<div>
+
 	<p>
 <!—- текстовое поле -->
 <input id="inputText" type="text" value="A miss is as good as a mile">
